@@ -1,0 +1,19 @@
+{
+  "name": "Biblioteca Fullstack",
+  "image": "mcr.microsoft.com/devcontainers/java:21-bullseye",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "cd biblio-frontend && npm install && npm install -g @angular/cli",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "angular.ng-template",
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
